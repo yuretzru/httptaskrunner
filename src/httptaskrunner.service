@@ -1,0 +1,10 @@
+[Unit]
+Description=Http Task Runner
+After=network.target remote-fs.target nss-lookup.target
+
+[Service]
+Restart=on-failure
+ExecStart=/sbin/httptaskrunner --conf /etc/httptaskrunner.yml --addr :56565
+
+[Install]
+WantedBy=multi-user.target

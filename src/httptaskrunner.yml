@@ -1,0 +1,7 @@
+version: 1
+settings:
+  listen: 127.0.0.1:56565
+commands:
+  test: echo test
+  ls: pwd && ls -al
+  bad: asdee
